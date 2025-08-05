@@ -220,21 +220,12 @@
   }
   
   .social-links a:hover {
-    color: #f1e5e5; /* Change to highlight color if you like */
+    color: #f1e5e5; 
     transform: scale(1.2);
-  }
-
-  .about-section {
-    background-image: url("https://images.unsplash.com/photo-1612423284934-e17bba5b4e7a");
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    color: white;
-    position: relative;
   }
   
   .about-overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 2em;
     max-width: 800px;
     margin: auto;
@@ -255,5 +246,5 @@
   
   .about-overlay .mission {
     font-weight: bold;
-    color: #ffd700;
+    color: #dfcc66;
   }
