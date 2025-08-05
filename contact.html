@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Design a website for any industry of your choice</title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ </head>
+ <body>
+   <header>
+    <div class="logo">
+      <img src="img/photo_2025-08-01_10-50-34.jpg" alt="clothing logo">
+    </div>
+     <h1>EniLux-CLOTHING</h1>
+     <nav>
+       <button id="menu-toggle"></button>
+       <ul id="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="services.html">Products</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+
+
+   <section id="contact">
+     <h2>Contact Us</h2>
+     <form id="contact-form" onsubmit="submitForm(event)">
+        <label for="name">NAME:</label>
+        <input type="text" id="name" required>
+
+        <label for="name">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" id="contact-button">Send</button>
+     </form>
+   </section>
+
+   <div class="social-links">
+    <a href="https://wa.me/2349042872604" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/ayom.ide0403" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://tiktok.com/@orokunleayomide" target="_blank" title="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="mailto:ayomideorokunle05@gmail.com" target="_blank" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>  

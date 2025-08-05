@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body{
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: white;
+    color: black;
+    padding:0.5em 1.5em;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  
+  .logo img{
+    border-radius: 70px;
+    width: 100px;
+  }
+  
+  nav {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+  #menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    color: white;
+    border: none;
+  }
+  
+  #nav-links {
+    display: flex;
+    font-size: 23px;
+    list-style: none;
+    gap: 1em;
+  }
+  
+  #nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  section.home-branding{
+    flex: 1;
+  }
+
+  main {
+    flex: 1;
+    padding: 2em;
+  }
+  
+  section {
+    margin-bottom: 3em;
+  }
+  
+  #home-branding{
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  #shop-button {
+    font-size: 20px;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    background-color: grey;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  #shop-button:hover{
+    color: white;
+    background-color: blue;
+  }
+
+  .shop-img{
+    object-fit: cover;
+    width: 350px;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 30%;
+    margin: 0 auto;
+    margin-top: -25%;
+    margin-left: 45%;
+    position: absolute;
+  }
+
+  .shop-img img{
+    width: 350px;
+    display: block;
+  }
+
+  .shop-img:hover {
+    transform: scale(1.09);
+  }
+
+  .products {
+    list-style: square;
+    margin-left: 2em;
+  }
+  
+  footer {
+    background: rgb(168, 167, 167);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    display: none;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    #menu-toggle {
+      display: block;
+    }
+  
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      background: #111;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+  
+    #nav-links.show {
+      display: flex;
+    }
+  
+    #nav-links li {
+      margin: 0.5em 0;
+      text-align: center;
+    }
+  }
+  #contact {
+    max-width: 500px;
+    margin: auto;
+    padding: 2em;
+  }
+
+  #contact label {
+    display: block;
+    margin-top: 1em;
+  }
+
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contact-button {
+    font-size: 20px;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  #contact-button:hover{
+    color: white;
+    background-color: blue;
+  }
+
+  .social-links {
+    margin-top: 2em;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: #0d7fac;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #f1e5e5; /* Change to highlight color if you like */
+    transform: scale(1.2);
+  }
+
+  .about-section {
+    background-image: url("https://images.unsplash.com/photo-1612423284934-e17bba5b4e7a");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .about-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .about-overlay p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+  }
+  
+  .about-overlay .mission {
+    font-weight: bold;
+    color: #ffd700;
+  }
