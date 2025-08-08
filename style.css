@@ -166,6 +166,24 @@
     margin-right: 20px;
   }
 
+  .home-text h2{
+    color: #000000;
+  }
+
+  .home-text h1{
+    color: #444;
+  }
+
+  .home-text p{
+    font-family:'Times New Roman', Times, serif;
+    color: #0d7fac;
+  }
+
+  .home-text blockquote{
+    font-family:'Times New Roman', Times, serif;
+    color: #0d7fac;
+  }
+
   #shop-button {
     font-size: 20px;
     margin-top: 1em;
@@ -182,9 +200,14 @@
     text-decoration: none;
   }
 
+  #shop-button a:hover{
+    text-decoration: underline;
+    background-color: #444;
+    color: #ccc;
+  }
+
   #shop-button:hover{
     text-decoration: underline;
-    color: white;
     background-color: #444;
   }
 
@@ -357,4 +380,11 @@
 
   .product-item button:hover{
     background-color: #444;
+  }
+
+  .attire{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
