@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+  section{
+    padding: 60px 10%;
   }
 
   html, body{
@@ -11,9 +16,9 @@
 
   body {
     font-size: 24px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'poppins', sans-serif;
     line-height: 1.6;
-    background-color: rgba(241, 220, 162, 0.6);
+    background-color: #faf6f1;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -195,6 +200,7 @@
   }
 
   .home-wrapper{
+    max-height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -302,6 +308,74 @@
     border-radius: 10px;
   }
 
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 5%;
+    background-color: #fff;
+  }
+  
+  .feature-card img {
+    width: 210px;
+    height: 210px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .why-choose {
+    padding: 3rem 5%;
+    text-align: center;
+  }
+  
+  .why-choose h2 {
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-size: 60px;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .benefit {
+    max-width: 250px;
+  }
+
+  .benefit h4{
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+  }
+
+  .benefit p{
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
   #services h2{
     font: 2.2em sans-serif;
     font-family: 'poppins', Times, serif;
@@ -404,6 +478,51 @@
     color: #f1e5e5; 
     transform: scale(1.2);
   }
+
+  .testimonials {
+    background-color: rgba(243, 217, 145, 0.6);; /* Soft cream background */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial h4 {
+    margin-top: 15px;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  }
   
   .about-overlay {
     background-color: rgba(243, 217, 145, 0.6); 
@@ -431,6 +550,8 @@
   }
 
   .casual {
+    margin: auto;
+    max-width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -479,6 +600,8 @@
   }
 
   .attire{
+    margin: auto;
+    max-width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
