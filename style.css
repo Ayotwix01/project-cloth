@@ -13,8 +13,8 @@
     font-size: 24px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: skyblue;
-    color: white;
+    background-color: rgba(241, 220, 162, 0.6);
+    color: #000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -22,19 +22,11 @@
   
   header {
     background: white;
+    border-bottom: 1px solid #ddd;
     color: black;
-    padding:0.5em 1.5em;
-    display: flex;
-    align-items: center;
-    top: 0;
     z-index: 100;
   }
   
-  header h1 {
-    display: inline-block;
-    font-size: 2rem;
-  }
-
   .acc-wrapper{
     display: flex;
     flex-direction: column;
@@ -100,10 +92,22 @@
   .acc-content a:hover{
     text-decoration: underline;
   }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   
   .logo img{
     border-radius: 70px;
-    width: 100px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo h1{
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 
   .logout-acc{
@@ -122,24 +126,34 @@
     border-radius: 20px;
   }
   
-  nav {
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+  .navbar{
+    margin: auto;
+    padding: 0.8rem 2rem;
+  }
+
+  ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
   #nav-links {
     display: flex;
-    font-size: 23px;
-    list-style: none;
-    gap: 1em;
+    gap: 1.5rem;
+  }
+
+  #nav-links li{
+    display: inline;
   }
   
-  #nav-links li a {
-    color: black;
+  #nav-links a {
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+  }
+
+  #nav-links a:hover{
+    color:#007bff;
   }
 
   main {
@@ -152,103 +166,131 @@
   }
 
   .home-wrapper{
-    margin-top: 5%;
-    margin-left: 5%;
-    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
   }
 
   .home-text{
-    flex: 3;
-    margin-right: 20px;
+    margin: auto;
   }
 
   .home-text h2{
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-size: 35px;
+    margin: 1rem 0;
     color: #000000;
   }
 
   .home-text h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     color: #444;
   }
 
   .home-text p{
-    font-family:'Times New Roman', Times, serif;
-    color: #0d7fac;
+    letter-spacing: 2px;
+    font: 0.9em sans-serif;
+    font-family: 'poppins', Times, serif;
+    color: #444;
   }
 
   .home-text blockquote{
-    font-family:'Times New Roman', Times, serif;
-    color: #0d7fac;
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    color: #555;
+    margin-bottom: 1.2rem;
   }
 
   #shop-button {
+    width: 200px;
+    transition: 0.3s;
+    border-radius: 3px;
     font-size: 20px;
     margin-top: 1em;
-    padding: 0.5em 1.5em;
-    background-color: grey;
-    color: black;
+    padding: 0.7rem 1.5rem;
+    background: black;
     border: none;
     cursor: pointer;
   }
 
   #shop-button a{
-    color: #000;
+    color: white;
     font-weight: bold;
     text-decoration: none;
   }
 
   #shop-button a:hover{
     text-decoration: underline;
-    background-color: #444;
-    color: #ccc;
   }
 
   #shop-button:hover{
     text-decoration: underline;
-    background-color: #444;
+    background-color: #333;
   }
 
-  .shop-img{
-    flex:1.5;
-    border: 3px solid black;
-    overflow: hidden;
-    border-radius: 30%;
-    flex-wrap: wrap;
+  #visit-button {
+    width: 200px;
+    transition: 0.3s;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-top: 1em;
+    padding: 0.7rem 1.5rem;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
   }
 
-  .shop-img img{
+  #visit-button a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #visit-button:hover{
+    text-decoration: underline;
+    background-color: #ffffff;  
+  }
+
+  #visit-button a:hover{
+    text-decoration: underline;
+  }
+
+  .brand-img{
+    flex:1;
+    justify-content: center;
+    display: flex;
+  }
+
+  .brand-img img{
     height: auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .shop-img:hover {
-    transform: scale(1.09);
+    width: 280px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .products {
     padding: 20px;
-    list-style: square;
-    margin-left: 2em;
   }
 
   .products a{
+    font: 1.5em sans-serif;
+    font-family: 'poppins', Times, serif;
     text-decoration: none;
     font-weight: bold;
-    font-size: 38px;
-    color: #fff;
+    color: #3b3b05;
   }
 
   .products a:hover{
     text-decoration: underline;
-    color: #000;
   }
 
   .products li{
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   footer {
@@ -263,7 +305,7 @@
     bottom: 20px;
     right: 20px;
     padding: 0.5em 1em;
-    font-size: 1.2em;
+    font-size: 0.8em;
     display: none;
     background: #333;
     color: white;
@@ -325,7 +367,7 @@
   }
   
   .about-overlay {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(243, 217, 145, 0.6); 
     padding: 2em;
     max-width: 800px;
     margin: auto;
@@ -346,20 +388,35 @@
   
   .about-overlay .mission {
     font-weight: bold;
-    color: #dfcc66;
+    color: #423e03;
   }
 
   .casual {
-    background-color: #ccc;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .casual-text h1{
+    margin-top: 30px;
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .product-item{
     text-align: center;
     padding: 10px;
     width: 220px;
+  }
+
+  .product-item h4{
+    color: #000;
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-size: 25px;
   }
 
   .product-item img{
@@ -369,13 +426,13 @@
   }
 
   .product-item button{
-    background-color: #000;
+    width: 140px;
+    background-color: #bd8d09;
     color: #fff;
     border: none;
     padding: 10px;
     margin-top: 5px;
     cursor: pointer;
-    border-radius: 13px;
   }
 
   .product-item button:hover{
@@ -383,8 +440,16 @@
   }
 
   .attire{
-    background-color: #eee;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .attire-text h1{
+    margin-top: 30px;
+    font: 1em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
   }
