@@ -131,10 +131,39 @@
     padding: 0.8rem 2rem;
   }
 
+  nav ul li{
+    position: relative;
+  }
+
   ul, li{
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  .drop-pro{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .drop-pro li{
+    padding: 5px 15px;
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .drop-pro a li{
+    text-decoration: underline;
+  }
+
+  .droppro:hover .drop-pro{
+    display: block;
   }
   
   #nav-links {
@@ -273,16 +302,26 @@
     border-radius: 10px;
   }
 
+  #services h2{
+    font: 2.2em sans-serif;
+    font-family: 'poppins', Times, serif;
+    font-weight: bold;
+  }
+
   .products {
-    padding: 20px;
+    background-color: #d3d341;
+    padding: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 18px;
   }
 
   .products a{
-    font: 1.5em sans-serif;
+    font: 1.9em sans-serif;
     font-family: 'poppins', Times, serif;
     text-decoration: none;
     font-weight: bold;
-    color: #3b3b05;
+    color: #0c0c0b;
   }
 
   .products a:hover{
